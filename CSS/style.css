@@ -1,0 +1,305 @@
+body{
+    margin: 0 auto;
+    font-family: sans-serif;
+    background-color: #E7E7E7;
+}
+.header{
+    padding-left: 5%;
+    padding-bottom: 0%;
+    background-color: #FFF159;  
+    border: 1px solid black;  
+}
+.logo{
+    margin-top: 1%;
+}
+.menu-header{
+    float: right;
+    margin: 2%;
+    margin-top: 2%;
+    
+}
+
+.barra-navegacion{
+    padding-left: 2%;
+    height: 5%;
+    font-weight: thin;
+    font-size: 140%;
+    
+    background-color: #759DC0;
+    
+}
+.barra-busqueda{
+    float: right;
+    
+}
+
+.bola-roja{
+    width: 10px; height: 10px; background-color:  #A10908; border-radius:10px;
+    display: inline-block;
+    
+
+}
+.barra-navegacion div{
+    display: inline-block; 
+    padding: 1%;
+    
+    
+}
+#breadcrumb{
+    margin-left: 6%;
+}
+#publicidad{
+    text-align: center;
+    width: 100%;
+}
+@media screen and (max-width :434px){
+    .menu-header{
+        float: left;
+        margin-top: 5%;
+    }
+    .logo{
+        width: 100%; 
+    }
+}
+@media screen and (max-width: 420px) {
+    .barra-navegacion div{
+        display: block;
+    }
+    
+    .seccion-menu{
+        display: block;
+        display: inline-block;
+    }
+    #breadcrumb{
+        display: inline;
+        margin-left: 5%;
+    }
+    #publicidad{
+        display: none
+    }
+    .header{
+        border:none
+    }
+    .barra-busqueda{
+        float: left;
+    }
+    .logo{
+        width: 100%;
+    }
+    .menu-header{
+        float: left;
+        margin-top: 5%;
+    }
+
+}
+
+a{
+    text-decoration: none;
+    color:  black;
+    margin-right: 30px;
+
+}
+form{
+    text-align:center;
+}
+
+
+#titulo-descuentos{
+    padding-left: 7%;
+}
+.imagen{
+    text-align: center;
+    display: block;
+
+}
+.caja-img{
+    display: inline-block;
+    border: 1px solid black;
+    background-color:white;
+    
+    
+}
+
+.caja-img h6{
+    
+    
+    margin: 0px;
+    
+    margin-bottom: 15px;
+    background-color: white;
+    
+}
+
+.login{
+    color: black;
+    text-align: center;
+    margin: auto;
+    font-size: 180%;
+}
+
+.login-recovery{
+    text-decoration:underline;
+    color:  blue;
+    /*position: relative;
+        left: 10%;
+        top: 60%;*/
+}
+
+.login-cuadro{
+    padding-top:3%;
+    background-color: white; 
+    width: 30%; 
+    height: 310px; 
+    margin: auto;
+}
+
+.email-login{
+    
+    left: 10%;
+    top: 10%; 
+    width: 80%; 
+    height: 700%;
+}
+
+.pass-login{
+
+    left: 10%;
+    top: 15%; 
+    width: 80%; 
+    height: 7%;
+}
+
+.btn-login{
+   
+    left: 10%; 
+    top: 20%; 
+    width: 82%; 
+    height:9%; 
+    background-color: #759DC0;
+    color: black;
+}
+
+input:focus{
+    outline: blue;
+}
+.contacto-cuadro{
+    background-color: white; 
+    width: 30%; 
+    height: 450px; 
+    position: relative; 
+    left: 35%; 
+    top: 50%
+}
+
+.elemento-login{
+ 
+    width: 100%;
+    
+    margin-top: 5%;
+}
+.email-contact{
+    position: relative; 
+    left: 7%;
+    top: 8%; 
+    width: 80%; 
+    height: 7%;
+}
+
+.pass-contact{
+    position: relative; 
+    left: 7%;
+    top: 10%; 
+    width: 80%; 
+    height: 7%;
+}
+
+.comments{
+    position: relative; 
+    left: 7%;
+    top: 12%; 
+    width: 80%; 
+    height: 16%;
+}
+
+.btn-comment{
+    position: relative; 
+    left: 7%; 
+    top: 16%; 
+    width: 82%; 
+    height:8%; 
+    background-color: #759DC0;
+    color: black;
+}
+
+.NewAccount-cuadro{
+    background-color: white; 
+    width: 30%; 
+    height: 550px; 
+    position: relative; 
+    left: 35%; 
+    top: 50%
+}
+
+.usuario-nuevo{
+    position: relative; 
+    left: 7%;
+    top: 8%; 
+    width: 84%; 
+    height: 7%;
+}
+
+.email-nuevo{
+    position: relative; 
+    left: 7%;
+    top: 10%; 
+    width: 84%;
+    height: 7%;
+}
+
+.pass-new{
+    position: relative; 
+    left: 7%;
+    top: 12%; 
+    width: 84%; 
+    height: 7%;
+}
+
+.confirm-pass{
+    position: relative; 
+    left: 7%;
+    top: 14%; 
+    width: 84%; 
+    height: 7%;
+}
+
+.btn-new{
+    position: relative; 
+    left: 7%; 
+    top: 20%; 
+    width: 84%; 
+    height:10%; 
+    background-color: #759DC0;
+    color: black;
+}
+
+.columna{
+    border: 2px solid black; 
+    color: black; 
+    background-color: #CCCCCC;
+}
+
+.celda{
+    border: 2px solid black;
+}
+
+.btn-agregar{
+     position: relative; 
+     left: 20% ;
+     top: 60%; 
+     width: 60%; 
+     background-color: #759DC0;
+     border-color: #339999;
+}
+.borde-rojo{
+    border: 1px solid red;
+}

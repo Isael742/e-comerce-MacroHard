@@ -1,0 +1,45 @@
+-Esta carpeta la tienen que poner en la dentro de la carpeta htdocs de xampp y encender el apache desde el panel de control de xampp.
+-Por alguna razon en el navegador Opera las imagenes de publicidad cargan poco tiempo y luego se borran (las de los productos si cargan). Esto no pasa en Chrome
+
+
+
+
+-Esta carpeta tiene los archivos con la extension php. Las estensiones de las referencias tambien est�n cambiadas en el codigo. Deber�a poder navegarse por el sitio sin problemas
+
+
+ 
+-Tienen que modificar el codigo del archivo "database.php". (Poner el username, nombre de la bd y contrase�a si tienen). No s� como funciona esa clase. Me la rob� de aqui xd  https://www.ionos.mx/digitalguide/paginas-web/desarrollo-web/crud-las-principales-operaciones-de-bases-de-datos/
+
+
+CODIGO DE LA BASE DE DATOS:
+create database ecomerce;
+create table Usuarios(id INT NOT NULL auto_increment PRIMARY KEY, nombre VARCHAR(30) NOT NULL,email  VARCHAR(15)UNIQUE NOT NULL,contrasena VARCHAR(10) );
+
+
+
+
+
+-Hasta ahora 
+	se pueden registrar usuarios, en caso de que los datos sean correctos (Que los 2 campos de password sean iguales, y que no haya ningun campo vacio). 
+	Se puede iniciar sesion con un usuario previemante registradio 
+
+
+
+Solamente se usa conexion con la base de datos. No he usado local storage
+
+
+Funcionamiento: 
+	Registro
+	1- entra a la pagina de "registro.php" y llena los campos correctamente (ya est� validado)
+	2- da click en "crear cuenta". Si la cuenta se cre� bien, te carga la pagina de inicio 
+	3- Revisa la base de datos. Debe haber a�adido el usuario
+	4-Si los datos no est�n bien, te muestra una pagina en blanco con unos mensajes de lo que est� mal. Despues de dar "aceptar" a los mensajes aparece un enlace que te regresa al registro (no pude mostrar los mensajes despu�s de cambiar la p�gina)
+
+	Iniciar sesi�n 
+	1- Llena el formulario con los datos correctos (que ya est�n en la base de datos)
+	2- click en "ingresar"
+	3- Si los datos son correctos, te debe mostrar algo as� "array(2) { ["email"]=> string(6) "CORREO" ["password"]=> string(6) "CORREO" }"
+
+2/12/21
+hice lo de iniciar sesion y parece que funciona bien. Cambié el menú de los puntos rojos para que permita cerrar cuando hay una sesion abierta y 
+abrir una cuando no. tambien se muestra el nombre en el carrito.  
